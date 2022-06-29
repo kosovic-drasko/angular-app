@@ -13,5 +13,20 @@ export class AppComponent {
   toggleVideo() {
     this['videoplayer'].nativeElement.play();
   }
-  title = 'angular-app';
+  id = 'lExdeVY1IBQ';
+  playerVars = {
+    cc_lang_pref: 'en',
+  };
+  player: any;
+  savePlayer(player: any) {
+    this.player = player;
+  }
+
+  playVideo() {
+    this.player.playVideo();
+  }
+
+  pauseVideo() {
+    this.player.pauseVideo();
+  }
 }
