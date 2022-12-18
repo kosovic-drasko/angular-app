@@ -6,27 +6,6 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  [x: string]: any;
-  @ViewChild('videoPlayer', { static: false })
-  videoPlayer!: ElementRef;
-  isPlay: boolean = false;
-  toggleVideo() {
-    this['videoplayer'].nativeElement.play();
-  }
-  id = 'lExdeVY1IBQ';
-  playerVars = {
-    cc_lang_pref: 'en',
-  };
-  player: any;
-  savePlayer(player: any) {
-    this.player = player;
-  }
+  ime?:string='ana';
 
-  playVideo() {
-    this.player.playVideo();
-  }
-
-  pauseVideo() {
-    this.player.pauseVideo();
-  }
 }

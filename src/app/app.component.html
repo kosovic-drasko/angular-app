@@ -1,22 +1,3 @@
-<div class="video">
-  <video controls (click)="toggleVideo()" #videoPlayer>
-    <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
-    Browser not supported
-  </video>
-</div>
-
-<youtube-player
-          [videoId]="id"
-          (ready)="savePlayer($event)"
-          [playerVars]="playerVars">
-        </youtube-player>
-    <button
-      type="button"
-      (click)="playVideo()">
-      Play
-    </button>
-    <button
-      type="button"
-      (click)="pauseVideo()">
-      Pause
-    </button>
+<!--<input [(ngModel)]="ime" type="text">-->
+<!--<app-dete [imeData]="ime" ></app-dete>-->
+<app-roditelj></app-roditelj>
